@@ -27,6 +27,7 @@ export default function Form(props) {
         autoComplete="off"
         value={name}
         onChange={handleChange}
+        placeholder="Type your task here..."
       />
       <button type="submit" className="btn btn__primary btn__lg">
         Add

@@ -3,17 +3,19 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Cormorant Garamond', serif;
+  transition: all .5s ease;
+
 }
-*:focus {
-  outline: 3px dashed #228bec;
-  outline-offset: 0;
-}
+
 html {
-  font: 62.5% / 1.15 sans-serif;
+  font: 62.5%; 
 }
 h1,
 h2 {
+
   margin-bottom: 0;
+
 }
 ul {
   list-style: none;
@@ -21,54 +23,69 @@ ul {
 }
 button {
   border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  appearance: none;
 }
-button::-moz-focus-inner {
-  border: 0;
-}
+
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
   margin: 0;
 }
+
+
 button,
 input {
   overflow: visible;
 }
 input[type="text"] {
-  border-radius: 0;
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  box-shadow: 5px 5px 20px 5px  #8820fece;
+  font-size: 22px;
+  line-height: 26px;
+
 }
+input[type="text"]:focus {
+outline: none;
+border: none;
+box-shadow: 5px 5px 20px 5px  #8820fece;
+background: #8820fece;
+color: #fff;
+font-weight: 700;
+}
+
+.btn__primary {
+  background-color: #8920fe;
+  color: #fff;
+  transition: all .5s ease;
+  max-width: 32%;
+  margin-left: 34%;
+  font-weight: 700;
+  border-radius: 15px;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 2rem;
+  /* padding: 2rem; */
+}
+.btn__primary:hover{
+  -webkit-box-shadow: 0px 30px 40px 5px rgba(137,32,254,0.4); 
+  box-shadow: 0px 30px 40px 5px rgba(137,32,254,0.4);
+  background-color:transparent;
+  color: #181818;
+
+
+}
+
 body {
   width: 100%;
-  max-width: 68rem;
+  max-width: 52rem;
   margin: 0 auto;
-  font:
-    1.6rem/1.25 Arial,
-    sans-serif;
-  background-color: #f5f5f5;
-  color: #4d4d4d;
+  margin-top: 6rem;
+  background-color:  #8920fe;
+  color: #181818;
 }
-@media screen and (min-width: 620px) {
-  body {
-    font-size: 1.9rem;
-    line-height: 1.31579;
-  }
-}
+
 /*END RESETS*/
 /* GLOBAL STYLES */
 .form-group > input[type="text"] {
@@ -77,13 +94,13 @@ body {
 }
 .btn {
   padding: 0.8rem 1rem 0.7rem;
-  border: 0.2rem solid #4d4d4d;
   cursor: pointer;
   text-transform: capitalize;
 }
 .btn.toggle-btn {
   border-width: 1px;
   border-color: #d3d3d3;
+  border: 0.1rem solid #181818;
 }
 .btn.toggle-btn[aria-pressed="true"] {
   text-decoration: underline;
@@ -97,10 +114,7 @@ body {
 .btn__filter {
   border-color: lightgrey;
 }
-.btn__primary {
-  color: #fff;
-  background-color: #000;
-}
+
 .btn-group {
   display: flex;
   justify-content: space-between;
@@ -177,7 +191,7 @@ body {
   margin-bottom: 1rem;
 }
 .label__lg {
-  line-height: 1.01567;
+  
   font-weight: 300;
   padding: 0.8rem;
   margin-bottom: 1rem;
@@ -194,14 +208,21 @@ body {
 [class*="__lg"] {
   display: inline-block;
   width: 100%;
-  font-size: 1.9rem;
+
 }
 [class*="__lg"]:not(:last-child) {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 620px) {
-  [class*="__lg"] {
-    font-size: 2.4rem;
+  h1 {
+    font-size: 66px;
+    line-height: 74px;
+    font-weight: 1000;
+    letter-spacing: -6px;
+
+  }
+  h2 {
+    font-size: 22px;
   }
 }
 /* Todo item styles */
@@ -225,11 +246,10 @@ body {
 /* CHECKBOX STYLES */
 .c-cb {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.25;
+  /* font-size: 1.6rem;
+  line-height: 1.25; */
   display: block;
   position: relative;
   min-height: 44px;
@@ -253,9 +273,6 @@ body {
   opacity: 0;
 }
 .c-cb > label {
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
   display: inline-block;
   margin-bottom: 0;
   padding: 8px 15px 5px;
@@ -268,10 +285,7 @@ body {
   border: 2px solid currentcolor;
   background: transparent;
 }
-.c-cb > input[type="checkbox"]:focus + label::before {
-  border-width: 4px;
-  outline: 3px dashed #228bec;
-}
+
 .c-cb > label::after {
   box-sizing: content-box;
   content: "";
