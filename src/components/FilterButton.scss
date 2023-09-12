@@ -1,0 +1,29 @@
+.toggle-btn {
+    margin: 1rem;
+    margin-top: 2rem;
+    height: 45px;
+    width: 100px;
+    color: #8820fe;
+    background-color: transparent;
+    font-size: 21px;
+    font-family: 'Cormorant Garamond', sans-serif;
+    border: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.toggle-btn:hover {
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, .5);
+    scale: 1.1;
+}
+
+.toggle-btn[aria-pressed="true"] {
+background-color: #ffcc00;
+color: #fff;
+font-weight: 600;
+}
+
+.toggle-btn[aria-pressed="true"]:hover {
+    box-shadow: 0 20px 50px -10px #ffcc00; 
+}

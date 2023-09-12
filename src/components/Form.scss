@@ -1,0 +1,66 @@
+form {
+    display: grid;
+    gap: 1em;
+
+    h2 {
+        margin-top: 3rem;
+        font-size: 21px;
+        font-family: 'Cormorant Garamond', sans-serif;
+        line-height: 26px;
+        text-transform: capitalize;
+        font-weight: 400;
+
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 1.5em;
+
+        input {
+            border-color: #fff;
+            border: none;
+            margin-top: 1.5rem;
+            height: 45px;
+            padding: 1rem;
+            box-shadow: 5px 3px 35px -2px #8820fe;
+            border-radius: 9px;
+            font-family: 'Cormorant Garamond', sans-serif;
+            text-transform: capitalize;
+            font-size: 21px;
+            line-height: 1.2;
+            transition: all .5s ease-in-out;
+
+        }
+
+        input:focus {
+            outline-style: none;
+        }
+
+        ::placeholder {
+            color: #8820fe;
+        }
+
+        .btn__primary{
+            font-family: 'Cormorant Garamond', sans-serif;
+            color: #8820fe;
+            border: none;
+            background: #ffcc00;
+            border-radius: 9px;
+            font-size: 21px;
+            line-height: 1.2;
+            transition: all .3s ease-in-out;
+            font-weight: 400;
+            height: 45px;
+            margin-top: 1.5rem;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+
+        }
+    }
+
+
+}

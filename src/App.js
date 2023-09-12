@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import Todo from "./components/Todo";
 import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
+// import "./App.scss";
 
 const FILTER_MAP = {
   All: () => true,
