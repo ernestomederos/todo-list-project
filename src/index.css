@@ -163,7 +163,7 @@ body {
 
 .todo-edit {
   color: #fff;
-  background-color:#008080;
+  background-color: #008080;
   border: none;
   border-radius: 12px;
   font-size: 21px;
@@ -191,7 +191,7 @@ body {
   flex: 1 1 49%;
 }
 .btn-group > * + * {
-  margin-left: 0.8rem;
+  margin-left: 0.3rem;
 }
 .label-wrapper {
   margin: 0;
@@ -228,9 +228,9 @@ body {
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 320px) {
   .todoapp {
-    padding: 4rem;
+    /* padding: 4rem; */
   }
 }
 .todoapp > * {
@@ -248,18 +248,54 @@ body {
   margin: 0;
 }
 h1 {
-  font-size: 38px;
+  /* margin-top: 2000px; */
+  font-size: 52px;
   letter-spacing: -4px;
 }
+.input-container {
+  min-width: 280px;
+  margin: 0 auto;
+}
+.filters {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+#list-heading {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 1.2rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 .label__lg {
+  font-size: 18px;
   font-weight: 300;
   padding: 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
   text-align: center;
 }
 .input__lg {
   padding: 2rem;
   border: 2px solid #000;
+}
+
+.btn__primary {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0.8rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  border: none;
+  border-radius: 12px;
+  background-color: #008080;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+::placeholder {
+  font-size: 18px;
 }
 
 [class*="__lg"] {
